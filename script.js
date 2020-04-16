@@ -29,6 +29,11 @@
 					x = parseFloat(x) + parseFloat(1);
 				} else {}
 
+// TO ENCRYPT BOTH CAPS & SMALL LETTERS
+// var e = "e";
+// if (x==e.toUpperCase() || x=="e") {
+// 	x = '!';
+// } else {}
 				// CONVERTS LETTERS TO VARIOUS SYMBOLS
 				if (x=="e") {
 					x = '!';
@@ -203,7 +208,7 @@
 				} else {}
 
 				document.write(x);
-				// document.getElementById("display1").innerHTML = ();
+				
 			}
 		}
 	}	

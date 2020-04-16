@@ -7,9 +7,8 @@
 </head>
 <body>
 	<h1 style="text-align: center;">ENCRYPTION & DECRYPTION<br>PROGRAM</h1>
-	<div class="flexbox-container">
 		<!-- ENCRYPTION LAYOUT -->
-		<div class="flexbox-item flexbox item-1">
+		<div class="flex1">
 			<form>
 				<input type="text" placeholder="Enter Value" name="encrypt" id="encrypt">
 				<p id="display1"></p>
@@ -18,7 +17,7 @@
 		</div>
 		</div>
 		<!-- DECRYPTION LAYOUT -->
-		<div class="flexbox-item flexbox item-2">
+		<div class="flex2">
 			<form>
 				<input type="text" placeholder="Enter Encryption" name="decrypt" id="decrypt">
 				<p id="display2"></p>
@@ -34,20 +33,32 @@
 	body{
 		padding:0px;
 		margin: 0px;
-		background-color: darkgrey;
+		background-color: lightgrey;
 	}
-	.flexbox-container {
-		display: flex;
-	}
-	.flexbox-item {
+	.flex1 {
 		left: 25%;
+		right:25%;
 		width: 40%;
-		height: 40%;
+		height: 100px;
+		border: 2px solid black;
+		border-radius: 10px;
+		position: absolute;
 		margin: 20px;
-		margin-top: 30px;
 		padding: 20px;
-		position: relative;
-		background-color: grey;	
+		background-color: grey;
+	}
+	.flex2 {
+		left: 25%;
+		right:25%;
+		width: 40%;
+		height: 100px;
+		border: 2px solid black;
+		border-radius: 10px;
+		position: absolute;
+		bottom: 25%;
+		margin: 20px;
+		padding: 20px;
+		background-color: grey;
 	}
 	input {
 		width: 50%;
@@ -68,10 +79,18 @@
 	}
 
 @media (max-width: 700px) {
-.flexbox-item {
-	left: 5%;
-	right: 5%;
-	width: 80%;
-}
+	.flex1 {
+		left: 2%;
+		right: 5%;
+		width: 80%;
+		overflow-y: hidden;
+	}
+	.flex2 {
+		left: 2%;
+		right: 5%;
+		width: 80%;
+		bottom: 20%;
+		overflow-y: hidden;
+	}
 
 </style>
