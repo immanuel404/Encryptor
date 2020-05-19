@@ -1,5 +1,5 @@
 # Encryptor
-A JavaScript program that encrypts and decrypts character symbols_simple security measure
+A JavaScript program that encrypts and decrypts character input_simple cryptography measure
 
 
 CSS Codes are in the index.html file
