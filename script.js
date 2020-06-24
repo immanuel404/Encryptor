@@ -1,4 +1,4 @@
-
+ 
 	//CODE_ENCRYPTION
 	function process() {
 		var input = document.getElementById("encrypt").value;
@@ -20,7 +20,7 @@
 
 		// ELSE...
 		} else {
-			var str = input.split("");
+			var str = input;
 			var x;
 
 			for (x of str) {
@@ -102,8 +102,16 @@
 				if (x=="u") {
 					x = '>';
 				} else {}
+				
+				// window.alert(document.write(x));
 
-				document.write(x);
+				// Diplay Output
+				var myWindow = window.open("", "newWindow", "width=300,height=100");
+				myWindow.document.write(x);
+
+				// Remove Input Value
+				document.getElementById("encrypt").value = "";
+
 			}
 		}
 	}	
@@ -207,9 +215,14 @@
 					x = 'u';
 				} else {}
 
-				document.write(x);
+				// document.write(x);
+
+				// Diplay Output
+				var myWindow = window.open("", "newWindow", "width=300,height=100");
+				myWindow.document.write(x);				
 				
+				// Remove Input Value
+				document.getElementById("decrypt").value = "";
 			}
 		}
 	}	
-	
