@@ -2,7 +2,7 @@
 A JavaScript program that encrypts and decrypts character input_ a simple cryptography tool.
 
 
-CSS code written inside the index.html file.
+css styling written inside the index.html file.
 
 link: https://immanuel404.github.io/Encryptor/
 
