@@ -1,8 +1,8 @@
 # Encryptor
-A JavaScript program that encrypts and decrypts character input_simple cryptography measure
+A JavaScript program that encrypts and decrypts character input_ a simple cryptography tool.
 
 
-CSS Codes are in the index.html file
+CSS code written inside the index.html file.
 
 link: https://immanuel404.github.io/Encryptor/
 
