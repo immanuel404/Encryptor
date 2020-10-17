@@ -1,6 +1,7 @@
  
 	//CODE_ENCRYPTION
 	function process() {
+
 		var input = document.getElementById("encrypt").value;
 
 		// CODE TO PREVENT CHARACTER REPITION
@@ -18,106 +19,129 @@
 		if (input == "") {
 			alert("Input Field is Empty");
 
-		// ELSE...
+
+		// IF NO ERROR...
 		} else {
 			var str = input;
-			var x;
+			x = "";
+			var ans = [];
 
 			for (x of str) {
 				// CONVERTS NUMBERS BY ADDING BY 1
 				if (x==1 || x==2 || x==3 || x==4 || x==5 || x==6 || x==7 || x==8) {
 					x = parseFloat(x) + parseFloat(1);
-				} else {}
+					ans.push(x);
+				}
 
-// TO ENCRYPT BOTH CAPS & SMALL LETTERS
-// var e = "e";
-// if (x==e.toUpperCase() || x=="e") {
-// 	x = '!';
-// } else {}
+				// TO ENCRYPT BOTH CAPS & SMALL LETTERS
+				// var e = "e";
+				// if (x==e.toUpperCase() || x=="e") {
+				// 	x = '!';
+				// } else {}
+
 				// CONVERTS LETTERS TO VARIOUS SYMBOLS
 				if (x=="e") {
 					x = '!';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="a") {
+				else if (x=="a") {
 					x = '@';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="r") {
+				else if (x=="r") {
 					x = '#';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="i") {
+				else if (x=="i") {
 					x = '$';
-				} else {}
+					ans.push(x);
+				}
 				
-				if (x=="o") {
+				else if (x=="o") {
 					x = '%';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="t") {
+				else if (x=="t") {
 					x = '^';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="n") {
+				else if (x=="n") {
 					x = '&';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="s") {
+				else if (x=="s") {
 					x = '*';
-				} else {}
-				
-				if (x=="l") {
+					ans.push(x);
+				}
+
+				else if (x=="l") {
 					x = '-';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="c") {
+				else if (x=="c") {
 					x = '+';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="b") {
+				else if (x=="b") {
 					x = '~';
-				} else {}
+					ans.push(x);
+				}
 				
-				if (x=="d") {
+				else if (x=="d") {
 					x = '`';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="f") {
+				else if (x=="f") {
 					x = '(';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="g") {
+				else if (x=="g") {
 					x = ')';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="h") {
+				else if (x=="h") {
 					x = '|';
-				} else {}
+					ans.push(x);
+				}
 				
-				if (x=="m") {
+				else if (x=="m") {
 					x = '?';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="u") {
+				else if (x=="u") {
 					x = '>';
-				} else {}
-				
-				// window.alert(document.write(x));
-
-				// Diplay Output
-				var myWindow = window.open("", "newWindow", "width=300,height=100");
-				myWindow.document.write(x);
-
-				// Remove Input Value
+					ans.push(x);
+				}
+				else {
+					ans.push(x);
+				}
+				// Clear Input Value
 				document.getElementById("encrypt").value = "";
-
 			}
+			// Convert to string | remove commas | output reults
+			var output = ans.toString();
+			var result = output.replace(/,/g, "");
+			document.getElementById("display1").innerHTML = result;
 		}
-	}	
+	}
+
+
 
 	// DECRYPTION CODE
 	function compute() {
+
 		var output = document.getElementById("decrypt").value;
 
 		// CODE TO PREVENT CHARACTER REPITION
@@ -135,94 +159,114 @@
 		if (output == "") {
 			alert("Input Field is Empty");
 
-		// ELSE...
+
+		// IF NO ERROR...
 		} else {
-			var str = output.split("");
-			var x = "";
+			var str = output;
+			x = "";
+			var ans = [];
 
 			for (x of str) {
 				// CONVERTS ENCRYPTION BY SUBTRACTING 1
 				if (x==1 || x==2 || x==3 || x==4 || x==5 || x==6 || x==7 || x==8 ||x==9) {
 					x = parseFloat(x) - parseFloat(1);
-				} else {}
+					ans.push(x);
+				}
 
 				// CONVERTS SYMBOLS BACK TO LETTERS
 				if (x=="!") {
 					x = 'e';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="@") {
+				else if (x=="@") {
 					x = 'a';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="#") {
+				else if (x=="#") {
 					x = 'r';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="$") {
+				else if (x=="$") {
 					x = 'i';
-				} else {}
+					ans.push(x);
+				}
 				
-				if (x=="%") {
+				else if (x=="%") {
 					x = 'o';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="^") {
+				else if (x=="^") {
 					x = 't';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="&") {
+				else if (x=="&") {
 					x = 'n';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="*") {
+				else if (x=="*") {
 					x = 's';
-				} else {}
+					ans.push(x);
+				}
 				
-				if (x=="-") {
+				else if (x=="-") {
 					x = 'l';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="+") {
+				else if (x=="+") {
 					x = 'c';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="~") {
+				else if (x=="~") {
 					x = 'b';
-				} else {}
-				
-				if (x=="`") {
+					ans.push(x);
+				}
+
+				else if (x=="`") {
 					x = 'd';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="(") {
+				else if (x=="(") {
 					x = 'f';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x==")") {
+				else if (x==")") {
 					x = 'g';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x=="|") {
+				else if (x=="|") {
 					x = 'h';
-				} else {}
+					ans.push(x);
+				}
 				
-				if (x=="?") {
+				else if (x=="?") {
 					x = 'm';
-				} else {}
+					ans.push(x);
+				}
 
-				if (x==">") {
+				else if (x==">") {
 					x = 'u';
-				} else {}
-
-				// document.write(x);
-
-				// Diplay Output
-				var myWindow = window.open("", "newWindow", "width=300,height=100");
-				myWindow.document.write(x);				
-				
-				// Remove Input Value
+					ans.push(x);
+				}
+				else {
+					ans.push(x);
+				}
+				// Clear Input Value
 				document.getElementById("decrypt").value = "";
 			}
+			// Convert to string | remove commas | output reults
+			var output = ans.toString();
+			var result = output.replace(/,/g, "");
+			document.getElementById("display2").innerHTML = result;
 		}
-	}	
+	}

@@ -4,14 +4,16 @@
 	<!-- NOTE: DOESNT ENCRYPT CAPS CHARACTERS & SYMBOLS_ONLY small letters and numbers -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Encrypt & Decrypt</title>
+	<!-- Favicon -->
+    <link rel="icon" href="encrypt.png" type="image/gif" sizes="16x16">
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-	<h1 style="text-align: center;">ENCRYPTION & DECRYPTION<br>PROGRAM</h1>
+	<h1>ENCRYPTION & DECRYPTION<br>PROGRAM</h1>
 		<!-- ENCRYPTION LAYOUT -->
 		<div class="flex1">
 			<form>
-				<input type="text" placeholder="Enter Value" name="encrypt" id="encrypt">
+				<input type="text" placeholder=" Enter Value" name="encrypt" id="encrypt">
 				<p id="display1"></p>
 			</form>
 				<button type="submit" onclick="process()">Encrypt</button>
@@ -20,7 +22,7 @@
 		<!-- DECRYPTION LAYOUT -->
 		<div class="flex2">
 			<form>
-				<input type="text" placeholder="Enter Encryption" name="decrypt" id="decrypt">
+				<input type="text" placeholder=" Decrypt Value" name="decrypt" id="decrypt">
 				<p id="display2"></p>
 			</form>
 				<button type="submit" onclick="compute()">Decrypt</button>
@@ -34,43 +36,44 @@
 	body{
 		padding:0px;
 		margin: 0px;
+		box-sizing: border-box;
+		overflow-x: hidden;
 		background-color: lightgrey;
 	}
+	h1 {
+		text-align:center;
+		color:darkblue;
+	}
 	.flex1 {
-		left: 25%;
-		right:25%;
 		width: 40%;
-		height: 100px;
-		border: 2px solid black;
-		border-radius: 10px;
-		position: absolute;
-		margin: 20px;
+		height: 120px;
+		margin: 25px auto;
+		margin-top: 50px;
 		padding: 20px;
-		background-color: grey;
+		border-radius: 5px;
+		border: 1px solid black;
+		box-shadow: 2px 3px 3px black;
+		background-color: transparent;
 	}
 	.flex2 {
-		left: 25%;
-		right:25%;
 		width: 40%;
-		height: 100px;
-		border: 2px solid black;
-		border-radius: 10px;
-		position: absolute;
-		bottom: 25%;
-		margin: 20px;
+		height: 120px;
+		margin: 25px auto;
 		padding: 20px;
-		background-color: grey;
+		border-radius: 5px;
+		border: 1px solid black;
+		box-shadow: 2px 3px 3px black;
+		background-color: transparent;
 	}
 	input {
-		width: 50%;
+		width: 90%;
 		height: 30px;
-		padding:2px;
 		border: 2px solid #ccc;
 		border-radius: 5px;
 	}
 	button {
 		color: white;
-		height:30px;
+		height: 30px;
 		border: 1px solid #ccc;
 		border-radius: 4px;
 		background-color: grey;
@@ -78,22 +81,13 @@
 	button:hover {
 	  background-color: black;
 	}
-
-@media (max-width: 700px) {
-	.flex1 {
-		left: 0%;
-		right: 2%;
-		width: 80%;
-		overflow-y: hidden;
-		position: relative;
+	/*PHONE MEDIA QUERY*/
+	@media (max-width: 700px) {
+		.flex1 {
+			width: 80%;
+		}
+		.flex2 {
+			width: 80%;
+		}
 	}
-	.flex2 {
-		left: 0%;
-/* 		right: 5%; */
-		width: 80%;
-		overflow-y: hidden;
-		position: relative;
-	}
-}
-
 </style>
