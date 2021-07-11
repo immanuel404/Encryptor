@@ -1,0 +1,80 @@
+	body {
+		padding: 20px 0px;
+		margin: 0px;
+		box-sizing: border-box;
+		overflow-x: hidden;
+		background-color: lightgrey;
+	}
+	h1 {
+		color:darkblue;
+		text-align:center;
+	}
+	.flex1 {
+		width: 40%;
+		height: 120px;
+		margin: 25px auto;
+		margin-top: 50px;
+		padding: 20px;
+		border-radius: 5px;
+		border: 1px solid black;
+		box-shadow: 2px 3px 3px black;
+		background-color: transparent;
+	}
+	.flex2 {
+		width: 40%;
+		height: 120px;
+		margin: 25px auto;
+		padding: 20px;
+		border-radius: 5px;
+		border: 1px solid black;
+		box-shadow: 2px 3px 3px black;
+		background-color: transparent;
+	}
+	input {
+		width: 90%;
+		height: 30px;
+		border: 2px solid #ccc;
+		border-radius: 5px;
+	}
+	button {
+		color: white;
+		height: 30px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		background-color: grey;
+	}
+	button:hover {
+	  background-color: black;
+	}
+
+
+	/*PHONE MEDIA QUERY*/
+	@media (max-width: 700px) {
+		.flex1 {
+			width: 80%;
+		}
+		.flex2 {
+			width: 80%;
+		}
+	}
+
+
+	/*NEW THEME CSS*/
+	h2 {
+		text-align: center;
+	}
+	.blink {
+		font-weight: 700;
+		animation: 1s blink step-end infinite;
+	}
+
+	@keyframes blink {
+	  from,
+	  to {
+	    color: transparent;
+	  }
+
+	  50% {
+	    color: darkblue;
+	  }
+	}

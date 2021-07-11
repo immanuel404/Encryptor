@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- NOTE: DOESNT ENCRYPT CAPS CHARACTERS & SYMBOLS_ONLY small letters and numbers -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Encrypt & Decrypt</title>
+	<!-- Favicon -->
+    <link rel="icon" href="encrypt.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<h1>ENCRYPTION & DECRYPTION<br>PROGRAM</h1>
+	<h2><a class="blink" href="newTheme.html" target="_blank">Try New Theme!</a></h2>
+		<!-- ENCRYPTION LAYOUT -->
+		<div class="flex1">
+			<form>
+				<input type="text" placeholder=" Encrypt Characters" name="encrypt" id="encrypt">
+				<p id="display1"></p>
+			</form>
+			<button type="submit" onclick="process()">Encrypt</button>
+		</div>
+
+		<!-- DECRYPTION LAYOUT -->
+		<div class="flex2">
+			<form>
+				<input type="text" placeholder=" Decrypt Characters" name="decrypt" id="decrypt">
+				<p id="display2"></p>
+			</form>
+			<button type="submit" onclick="compute()">Decrypt</button>
+		</div>
+
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
