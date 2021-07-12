@@ -130,30 +130,10 @@
 				// Clear Input Value
 				document.getElementById("encrypt").value = "";
 			}
-			// Convert to string | remove commas | output results
+			// Convert to string | remove commas | output reults
 			var output = ans.toString();
 			var result = output.replace(/,/g, "");
 			document.getElementById("display1").innerHTML = result;
-
-			// OUTPUT RESULT WITH WINBOX LIBRARY
-			const encryptOutput = document.querySelector('#encryptOutput')
-			const aboutBox = new WinBox({
-			    title: 'Encryption Output',
-			    // modal: true,
-			    width: '300px',
-			    height: '150px',
-			    top: 50,
-			    right: 50,
-			    bottom: 50,
-			    left: 50,
-			    mount: encryptOutput,
-			    onfocus: function () {
-			      this.setBackground('#333')
-			    },
-			    onblur: function () {
-			      this.setBackground('#777')
-			    },
-			 })
 		}
 	}
 
@@ -284,29 +264,9 @@
 				// Clear Input Value
 				document.getElementById("decrypt").value = "";
 			}
-			// Convert to string | remove commas | output results
+			// Convert to string | remove commas | output reults
 			var output = ans.toString();
 			var result = output.replace(/,/g, "");
 			document.getElementById("display2").innerHTML = result;
-
-			// OUTPUT RESULT WITH WINBOX LIBRARY
-			const decryptOutput = document.querySelector('#decryptOutput')
-			const aboutBox = new WinBox({
-			    title: 'Decryption Output',
-			    // modal: true,
-			    width: '300px',
-			    height: '150px',
-			    top: 60,
-			    right: 50,
-			    bottom: 50,
-			    left: 60,
-			    mount: decryptOutput,
-			    onfocus: function () {
-			      this.setBackground('#333')
-			    },
-			    onblur: function () {
-			      this.setBackground('#777')
-			    },
-			 })
 		}
 	}

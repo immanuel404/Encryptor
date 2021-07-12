@@ -12,25 +12,33 @@
 
 <body>
 	<h1>ENCRYPTION & DECRYPTION<br>PROGRAM</h1>
-	<h2><a class="blink" href="newTheme.html" target="_blank">Try New Theme!</a></h2>
-		<!-- ENCRYPTION LAYOUT -->
-		<div class="flex1">
-			<form>
-				<input type="text" placeholder=" Encrypt Characters" name="encrypt" id="encrypt">
-				<p id="display1"></p>
-			</form>
-			<button type="submit" onclick="process()">Encrypt</button>
-		</div>
+	<!-- ENCRYPTION LAYOUT -->
+	<div class="flex1">
+		<form>
+			<input type="text" placeholder=" Encrypt Characters" name="encrypt" id="encrypt">
+		</form>
+		<button type="submit" onclick="process()">Encrypt</button>
+	</div>
+	<!-- DECRYPTION LAYOUT -->
+	<div class="flex2">
+		<form>
+			<input type="text" placeholder=" Decrypt Characters" name="decrypt" id="decrypt">
+		</form>		
+		<button type="submit" onclick="compute()">Decrypt</button>
+		<p><a class="blink" href="oldTheme.html" target="_blank">Click here to use old theme.</a></p>
+	</div>
 
-		<!-- DECRYPTION LAYOUT -->
-		<div class="flex2">
-			<form>
-				<input type="text" placeholder=" Decrypt Characters" name="decrypt" id="decrypt">
-				<p id="display2"></p>
-			</form>
-			<button type="submit" onclick="compute()">Decrypt</button>
+	<!-- WINBOX OUTPUT -->
+	<div class="hidden">
+		<div id="encryptOutput">
+			<p id="display1"></p>
 		</div>
-
+		<div id="decryptOutput">
+			<p id="display2"></p>
+		</div>
+	</div>
+	
 	<script type="text/javascript" src="js/script.js"></script>
+	<script src="js/winbox.bundle.js"></script>
 </body>
 </html>
