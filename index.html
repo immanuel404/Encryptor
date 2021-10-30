@@ -11,30 +11,33 @@
 </head>
 
 <body>
-	<h1>ENCRYPTION & DECRYPTION<br>PROGRAM</h1>
-	<!-- ENCRYPTION LAYOUT -->
-	<div class="flex1">
-		<form>
-			<input type="text" placeholder=" Encrypt Characters" name="encrypt" id="encrypt">
-		</form>
-		<button type="submit" onclick="process()">Encrypt</button>
-	</div>
-	<!-- DECRYPTION LAYOUT -->
-	<div class="flex2">
-		<form>
-			<input type="text" placeholder=" Decrypt Characters" name="decrypt" id="decrypt">
-		</form>		
-		<button type="submit" onclick="compute()">Decrypt</button>
-		<p><a class="blink" href="oldTheme.html" target="_blank">Click here to use old theme.</a></p>
-	</div>
-
-	<!-- WINBOX OUTPUT -->
-	<div class="hidden">
-		<div id="encryptOutput">
-			<p id="display1"></p>
+	<div id="body">
+		<h1>CRYPTOGRAPHY<br>PROGRAM</h1>
+		<!-- ENCRYPTION LAYOUT -->
+		<div class="flex1">
+			<form>
+				<input type="text" placeholder=" Encrypt Characters" name="encrypt" id="encrypt">
+			</form>
+			<button type="submit" onclick="process()">Encrypt</button>
 		</div>
-		<div id="decryptOutput">
-			<p id="display2"></p>
+
+		<!-- DECRYPTION LAYOUT -->
+		<div class="flex2">
+			<form>
+				<input type="text" placeholder=" Decrypt Characters" name="decrypt" id="decrypt">
+			</form>		
+			<button type="submit" onclick="compute()">Decrypt</button>
+			<p><a class="blink" href="oldTheme.html" target="_blank">Click here to use old theme</a></p>
+		</div>
+
+		<!-- WINBOX OUTPUT -->
+		<div class="hidden">
+			<div id="encryptOutput">
+				<p id="display1"></p>
+			</div>
+			<div id="decryptOutput">
+				<p id="display2"></p>
+			</div>
 		</div>
 	</div>
 	
