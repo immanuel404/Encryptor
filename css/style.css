@@ -64,8 +64,10 @@
 		text-align: left;
 	}
 	.blink {
-		font-weight: 700;
-		animation: 1s blink step-end infinite;
+		font-weight: 100;
+		color: white;
+		/*font-weight: 700;*/
+		/*animation: 1s blink step-end infinite;*/
 	}
 
 	@keyframes blink {
