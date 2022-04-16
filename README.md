@@ -1,7 +1,7 @@
 # Encryptor
 
 
-Javascript program that encrypts and decrypts character input_ a simple cryptography tool. The terminal UI was developed using the winBox-Library _(https://nextapps-de.github.io/winbox/).
+Basic cryptography tool built with JavaScript that encrypts and decrypts plaintext. Terminal UI was developed with winBox-Library(https://nextapps-de.github.io/winbox/).
 
 
 Link: https://immanuel404.github.io/Encryptor/
