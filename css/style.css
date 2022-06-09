@@ -1,0 +1,112 @@
+	@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+	body {
+		margin: 0px auto;
+		padding: 20px 0px;
+		box-sizing: border-box;
+		background-color: #333;
+		font-family: 'Roboto', sans-serif;
+		overflow-x: hidden;
+	}
+	h1 {
+		padding: 20px;
+		color:lightgrey;
+		text-align:center;
+	}
+	.container{
+		width: 45%;
+		padding: 20px;
+		margin: 50px auto;
+		border-radius: 10px;
+		background-color: lightslategrey;
+		filter: opacity(80%);
+	}
+	.form1 {
+		height: 100px;
+		padding: 20px;
+		background-color: transparent;
+	}
+	.form2 {
+		height: 80px;
+		padding: 20px;
+		background-color: transparent;
+	}
+	input {
+		width: 90%;
+		height: 30px;
+		border: 2px solid #ccc;
+		border-radius: 5px;
+	}
+	button {
+		color: white;
+		height: 30px;
+		margin: 5px 0;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		background-color: grey;
+		transition: 0.8s;
+	}
+	button:hover {
+	  background-color: black;
+	}
+	.footer {
+		font-size: 10px;
+		margin-top: 80px;
+	}
+	.footer p {
+		text-align: center;
+		color: lightslategrey;
+	}
+	.footer a {
+		font-size: 10px;
+		color: lightslategrey;
+	}
+
+
+	/*Hide Encryption Output*/
+	.hidden {
+		display: none;
+	}
+	/*WinBox Output Body*/
+	.wb-body {
+		padding: 20px;
+		background: #111;
+		color: darkgrey;
+	}
+
+
+	/*PHONE MEDIA QUERY*/
+	@media (max-width: 700px) {
+		h1 {
+			font-size: 22px;
+		}
+		.container{
+			width: 80%;
+		}
+		.footer {
+			position: absolute;
+			bottom: 20px;
+			left: 40%;
+		}
+	}
+
+
+	/*OLD-THEME CSS*/
+	p {
+		text-align: left;
+	}
+/*	.blink {
+		font-weight: 100;
+		color: white;
+		animation: 1s blink step-end infinite;
+	}
+	@keyframes blink {
+	  from,
+	  to {
+	    color: transparent;
+	  }
+
+	  50% {
+	    color: white;
+	  }
+	}*/
