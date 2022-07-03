@@ -1,7 +1,7 @@
 
 	//CODE_ENCRYPTION
 	function encrypt() {
-		
+
 		setTimeout(function(){
 			var input = document.getElementById("encrypt").value;
 
@@ -60,7 +60,7 @@
 						x = '$';
 						ans.push(x);
 					}
-					
+
 					else if (x=="o") {
 						x = '%';
 						ans.push(x);
@@ -95,7 +95,7 @@
 						x = '~';
 						ans.push(x);
 					}
-					
+
 					else if (x=="d") {
 						x = '`';
 						ans.push(x);
@@ -115,7 +115,7 @@
 						x = '|';
 						ans.push(x);
 					}
-					
+
 					else if (x=="m") {
 						x = '?';
 						ans.push(x);
@@ -216,7 +216,7 @@
 						x = 'i';
 						ans.push(x);
 					}
-					
+
 					else if (x=="%") {
 						x = 'o';
 						ans.push(x);
@@ -236,7 +236,7 @@
 						x = 's';
 						ans.push(x);
 					}
-					
+
 					else if (x=="-") {
 						x = 'l';
 						ans.push(x);
@@ -271,7 +271,7 @@
 						x = 'h';
 						ans.push(x);
 					}
-					
+
 					else if (x=="?") {
 						x = 'm';
 						ans.push(x);
@@ -305,7 +305,7 @@
 				    left: 25,
 				    mount: decryptOutput,
 				    onfocus: function () {
-				      this.setBackground('#333')
+				      this.setBackground('green')
 				    },
 				    onblur: function () {
 				      this.setBackground('#777')
