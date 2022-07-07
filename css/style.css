@@ -83,6 +83,12 @@
 		.container{
 			width: 80%;
 		}
+		.form1 {
+			height: 60px;
+		}
+		.form2 {
+			height: 60px;
+		}
 		.footer {
 			position: absolute;
 			bottom: 20px;
